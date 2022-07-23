@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Form widget constructor with n0w.gui (in DEV)</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href = "./assets/styles/styles.css">
+        <link rel= "shortcut icon" href= "./assets/img/favicon.png">
+    </head>
+    <body>
+        <div class = "wrapper">
+
+            <!-- Tools Start -->
+
+            <div class = "toolbox">
+                <div class = "toolbox__header">
+                    <label>Preview panel</label>
+                    <b class = "toolbox__header__closebtn">&times;</b>
+                </div>
+
+                <div class = "toolbox__content">
+                    <div class = "toolbox__content__section">
+                        <label>Form title:</label>
+                        <input class = "toolbox__tool__name" type = "text" value = "Form1" placeholder = "Enter form name..." /><br /><br />
+                        <label>Controls:</label><br /><br />
+
+                        <div class = "toolbox__tool__undersection">
+
+                            <a id = "toolbox__tool__controls__add__button" href = "#">Element preview: <b>Button</b></a>
+                            <a id = "toolbox__tool__controls__add__checkbox" href = "#">Element preview: <b>Checkbox</b></a>
+                            <a id = "toolbox__tool__controls__add__radio" href = "#">Element preview: <b>Radio button</b></a>
+                            <a id = "toolbox__tool__controls__add__text" href = "#">Element preview: <b>Text</b></a>
+                            <a id = "toolbox__tool__controls__add__link" href = "#">Element preview: <b>Link</b></a>
+                            <a id = "toolbox__tool__controls__add__textfield" href = "#">Element preview: <b>Text field</b></a>
+                            <a id = "toolbox__tool__controls__add__textarea" href = "#">Element preview: <b>Text area</b></a>
+                            <a id = "toolbox__tool__controls__add__combo" href = "#">Element preview: <b>Combobox</b> </a>
+
+                        </div><br /><br />
+                        <label>Form theme:</label><br /><br />
+                        <div class = "toolbox__tool__undersection">
+
+                            <a id = "toolbox__tool__theme__default" href = "#">Default theme</a>
+                            <a id = "toolbox__tool__theme__1" href = "#">Custom theme 1</a>
+                            <a id = "toolbox__tool__theme__2" href = "#">Custom theme 2</a>
+                            <a id = "toolbox__tool__theme__3" href = "#">Custom theme 3</a>
+
+                        </div><br /><br />
+
+                        <label>Other:</label><br /><br />
+                        <div class = "toolbox__tool__undersection">
+                            <a id = "toolbox__tool__toggle" href = "#">Show form</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+          <!-- Tools End -->
+
+
+            <header class = "header" data-id = "header">
+                <a class = "header__logo" href = "/" title = "Home">n0w.gui</a>
+                <nav>
+                    <a href = "/">Home</a>
+                    <a href = "#" id = "toolbox_open">Preview panel</a>
+                    <a href = "#" id = "light_theme">Light theme</a>
+                    <a href = "#" id = "dark_theme">Dark theme</a>
+                </nav>
+            </header>
+
+            <div class = "content">
+
+                    <!-- Form Start -->
+
+                    <form class = "form">
+                        <div class = "form__title">
+                            <label class = "form__title__name" style="float:left;">Title</label>
+                            <label class = "form__title__closebtn" style="float:right;">&times;</label>
+                        </div>
+                        <div class = "form__body" id = "form__body"></div>
+                    </form>
+
+                    <!-- Form End -->
+
+                
+            </div>
+            <footer class = "footer" data-id = "footer"><label>Copyright &copy; 2022 n0wonmai</label></footer>
+        </div>
+        <script type = "module" src = "./assets/scripts/app.js"></script>
+    </body>
+</html>
