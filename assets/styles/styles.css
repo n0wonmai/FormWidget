@@ -1,0 +1,187 @@
+/*
+ * Form widget constructor with n0w.gui
+ *
+ * styles.css
+ * 
+ * by n0wonmai
+ *
+*/
+
+@import "nullstyle.css";
+@import "toolbox.css";
+
+@import "form.css";
+
+@font-face
+{
+	font-family: "Xirod";
+	src: url("xirod.ttf");
+}
+
+body
+{
+	font-family: 'Kdam Thmor Pro', sans-serif !important;
+	font-size: 15pt;
+	background-color: #000;
+}
+
+.wrapper
+{
+	display: flex;
+	min-height: 100%;
+	overflow: hidden;
+	flex-direction: column;
+}
+
+.wrapper .header
+{
+	max-width: 100%;
+	width: 100%;
+	height: 2.0em;
+	background: #356aa0;
+	background: -moz-linear-gradient(top,  #356aa0 0%, #356aa0 100%);
+	background: -webkit-linear-gradient(top,  #356aa0 0%,#356aa0 100%);
+	background: linear-gradient(to bottom,  #356aa0 0%,#356aa0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356aa0', endColorstr='#356aa0',GradientType=0 );
+}
+
+.wrapper .header .header__logo
+{
+	margin-left: 1em;
+	margin-top: 0.2em;
+	font-family: 'Xirod', Arial, sans-serif;
+	font-size: 24pt;
+	transition: 0.4s linear;
+	-webkit-transition: 0.4s linear;
+	-moz-transition: 0.4s linear;
+	-o-transition: 0.4s linear;
+	color: #fff;
+	float: left;
+}
+
+.wrapper .header .header__logo:hover
+{
+	-webkit-box-shadow: -1px -1px 8px 6px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: -1px -1px 8px 6px rgba(34, 60, 80, 0.2);
+	box-shadow: -1px -1px 8px 6px rgba(34, 60, 80, 0.2);
+	opacity: 0.8;
+}
+
+.wrapper .header nav
+{
+	width: auto;
+	padding-right: 10px;
+	padding-top: 8px;
+	height: 100%;
+	float: right;
+}
+
+.wrapper .header nav a
+{
+	display: inline-block;
+	margin-top: -10px;
+	padding: 10px;
+	border-right: 1px solid black;
+	transition: 0.4s linear;
+	-webkit-transition: 0.4s linear;
+	-moz-transition: 0.4s linear;
+	-o-transition: 0.4s linear;
+	color: #fff;
+}
+
+.wrapper .header nav a:hover
+{
+	color: #000;
+	margin-right:10px;
+}
+
+.content
+{
+	max-width: 75%;
+	width: 75%;
+	height: 700px;
+	margin: 0px auto;
+	padding: 0px auto;
+	margin-top: 6em;
+	flex: 1 1 auto;
+}
+
+.footer
+{
+	max-width: 100%;
+	width: 100%;
+	height: 25px;
+	background: #356aa0;
+	background: -moz-linear-gradient(top,  #356aa0 0%, #356aa0 100%);
+	background: -webkit-linear-gradient(top,  #356aa0 0%,#356aa0 100%);
+	background: linear-gradient(to bottom,  #356aa0 0%,#356aa0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356aa0', endColorstr='#356aa0',GradientType=0 );
+	font-family: 'Xirod', Arial, sans-serif;
+	font-size: 10pt;
+	text-align: center;
+	color: #fff;
+}
+
+.footer label
+{
+	position: relative;
+	top: 30%;
+}
+
+@media (max-width: 731px)
+{
+	.wrapper .header nav
+    {
+	    width: auto;
+	    padding-right: 10px;
+	    padding-top: 8px;
+	    height: 100%;
+	    float: right;
+        display: block;
+
+
+    }
+
+	.wrapper .header nav a
+    {
+	    border: none;
+    }
+
+	.wrapper .header
+	{
+		max-width: 100%;
+		width: 100%;
+		height: auto;
+		background: #356aa0;
+		background: -moz-linear-gradient(top,  #356aa0 0%, #356aa0 100%);
+		background: -webkit-linear-gradient(top,  #356aa0 0%,#356aa0 100%);
+		background: linear-gradient(to bottom,  #356aa0 0%,#356aa0 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356aa0', endColorstr='#356aa0',GradientType=0 );
+	}
+}
+
+@media (max-width: 221px)
+{
+	.wrapper .header .header__logo
+	{
+		font-size: 18pt;
+	}
+
+	.wrapper .header nav a
+    {
+	    font-size: 11pt;
+    }
+}
+
+@media (max-width: 185px)
+{
+	.wrapper .header .header__logo
+	{
+		font-size: 14pt;
+	}
+
+	.wrapper .header nav a
+    {
+	    font-size: 9pt;
+    }
+}

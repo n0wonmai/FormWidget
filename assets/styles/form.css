@@ -1,0 +1,367 @@
+/*
+ * Form widget constructor with n0w.gui
+ *
+ * form.css
+ * 
+ * by n0wonmai
+ *
+*/
+
+@import "themes.css";
+
+.form
+{
+	width: 20%;
+	height: 40%;
+	position: absolute;
+	font: 8pt Arial;
+	top: 30%;
+	left: 20%;
+	color: rgb(255, 255, 255);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #1e1e1e;
+	cursor: url(../img/UI/cur_normal.png), auto;
+	color: #cfcfcf;
+}
+ 
+.form .form__title
+{
+	border-bottom: 1px solid #252524;
+	width: 100%;
+	background: #1a1c17;
+	height: 2em;
+	cursor: url(../img/UI/cur_move.png), auto;
+}
+ 
+.form .form__title .form__title__name
+{
+	cursor: url(../img/UI/cur_move.png), auto;
+}
+ 
+.form .form__title .form__title__closebtn
+{
+	cursor: url(../img/UI/cur_normal.png), auto;
+}
+ 
+.form .form__title label
+{
+	padding: 4px;
+	color: #6795ae;
+}
+ 
+.form .form__body
+{
+	background: #34373a;
+	background: -moz-linear-gradient(top,  #34373a 0%, #333333 100%);
+	background: -webkit-linear-gradient(top,  #34373a 0%,#333333 100%);
+	background: linear-gradient(to bottom,  #34373a 0%,#333333 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34373a', endColorstr='#333333',GradientType=0 );
+	width: 100%;
+	height: 100%;
+	padding: 3%;
+}
+ 
+.form .form__link
+{
+	color: #fff;
+	text-decoration: underline;
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	cursor: url(../img/UI/cur_link.png), auto;
+}
+
+.form .form__text
+{
+	color: #fff;
+}
+ 
+.form .form__link:visited
+{
+	color: #fff;
+	text-decoration: underline;
+}
+ 
+.form .form__link:hover
+{
+	color: #6795ae;
+	text-decoration: underline;
+}
+
+.form .form__button
+{
+	min-width: 100px;
+	position: relative;
+	min-height: 25px;
+	height: 25px;
+	max-width: 100%;
+	max-height: 100%;
+	color: #cfcfcf;
+	width: auto;
+	cursor: url(../img/UI/cur_normal.png), auto;
+	border: 1px solid rgb(80, 80, 80);
+	background-color: #343436;
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 8pt;
+	margin: 5px;
+}
+
+.form .form__button:hover
+{
+	background-color: rgb(36, 36, 36);
+}
+
+.form .form__button:active
+{
+	opacity: 0.8;
+	background-color: #292929;
+}
+
+.form .form__checkbox
+{
+	position: relative;
+	padding-left: 20px;
+	margin-bottom: 12px;
+	cursor: url(../img/UI/cur_normal.png), auto;
+	font: 10pt Arial;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin: 5px;
+}
+
+.form .form__checkbox .form__checkbox__input
+{
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.form .form__checkmark
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 15px;
+	width: 15px;
+	background: rgb(36, 36, 36);
+	border: 1px solid rgb(80, 80, 80);
+	transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+}
+
+/* On mouse-over, add a grey background color */
+.form .form__checkbox:hover input ~ .form__checkmark 
+{
+	background-color: rgb(17, 17, 17);
+	width: 15px;
+	height: 15px;
+}
+  
+/* When the checkbox is checked, add a blue background */
+.form .form__checkbox input:checked ~ .form__checkmark 
+{
+	height: 15px;
+	width: 15px;
+	background-repeat: no-repeat;
+}
+  
+/* Create the checkmark/indicator (hidden when not checked) */
+.form .form__checkmark:after 
+{
+	content: "";
+	position: absolute;
+	display: none;
+}
+  
+/* Show the checkmark when checked */
+.form .form__checkbox input:checked ~ .form__checkmark:after 
+{
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.form .form__checkbox .form__checkmark:after 
+{
+	left: 4px;
+	top: 0px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 2px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.form .form__textfield
+{
+	min-width: 100px;
+	position: relative;
+	height: 25px;
+	min-height: 25px;
+	max-width: 100%;
+	color: #cfcfcf;
+	width: auto;
+	cursor: url(../img/UI/cur_text.png), auto;
+	border: 1px solid rgb(80, 80, 80);
+	background-color: #343436;
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 8pt;
+	margin: 5px;
+	padding-left: 3px;
+}
+
+
+.form .form__textfield:focus
+{
+	opacity: 0.8;
+	background-color: #292929;
+}
+
+.form .form__radiobutton 
+{
+	position: relative;
+	padding-left: 19px;
+	margin-bottom: 12px;
+	cursor: url(../img/UI/cur_normal.png), auto;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font: 10pt Arial;
+	margin: 5px;
+}
+  
+/* Hide the browser's default radio button */
+.form .form__radiobutton__input
+{
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+  
+/* Create a custom radio button */
+.form .form__radiomark 
+{
+	position: absolute;
+	border: 1px solid rgb(80, 80, 80);
+	top: 0;
+	left: 0;
+	height: 15px;
+	width: 15px;
+	background: rgb(36, 36, 36);
+	transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+}
+  
+/* On mouse-over, add a grey background color */
+.form .form__radiobutton:hover input ~ .form__radiomark 
+{
+	background-color: rgb(17, 17, 17);
+}
+  
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.form .form__radiomark:after 
+{
+	content: "";
+	position: absolute;
+	display: none;
+}
+  
+/* Show the indicator (dot/circle) when checked */
+.form .form__radiobutton input:checked ~ .form__radiomark:after 
+{
+	display: block;
+}
+  
+/* Style the indicator (dot/circle) */
+.form .form__radiobutton .form__radiomark:after 
+{
+	top: 3.3px;
+	left: 3.5px;
+	width: 7px;
+	height: 7px;
+	border-radius: 0%;
+	background: white;
+}
+
+.form .form__combobox
+{
+	min-width: 100px;
+	position: relative;
+	height: 25px;
+	min-height: 25px;
+	max-width: 100%;
+	color: #cfcfcf;
+	width: auto;
+	cursor: url(../img/UI/cur_normal.png), auto;
+	border: 1px solid rgb(80, 80, 80);
+	background-color: #343436;
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 8pt;
+}
+
+.form .form__combobox:focus
+{
+	opacity: 0.8;
+}
+
+.form .form__textarea
+{
+	resize: none;
+	min-width: 150px;
+	position: relative;
+	height: 60px;
+	min-height: 60px;
+	max-width: 100%;
+	color: #cfcfcf;
+	width: auto;
+	cursor: url(../img/UI/cur_text.png), auto;
+	border: 1px solid rgb(80, 80, 80);
+	background-color: #343436;
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 8pt;
+	padding-left: 3px;
+}
+
+.form .form__textarea:focus
+{
+	opacity: 0.8;
+	background-color: #292929;
+}

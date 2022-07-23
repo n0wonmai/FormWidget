@@ -1,0 +1,168 @@
+/*
+ * Form widget constructor with n0w.gui
+ *
+ * toolbox.css
+ * 
+ * by n0wonmai
+ *
+*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap');
+
+@-webkit-keyframes Toolbox
+{
+	0% { transform: translate(-500%, -50%); }
+	100% {transform: translate(-50%, -50%);}
+}
+
+@-moz-keyframes Toolbox
+{
+	0% { transform: translate(-500%, -50%); }
+	100% {transform: translate(-50%, -50%);}
+}
+
+@keyframes Toolbox
+{
+	0% { transform: translate(-500%, -50%); }
+	100% {transform: translate(-50%, -50%);}
+}
+
+@-webkit-keyframes ToolboxControlsTab {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes ToolboxControlsTab {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes ToolboxControlsTab {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.toolbox
+{
+    display: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 100%;
+    height: 40%;
+	z-index: 9999;
+	overflow: auto;
+	position: fixed;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    border: 1px solid #c8c8c8;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    font-size: 12pt;
+    font-weight: 400;
+    animation: Toolbox 1s backwards;
+
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );
+
+    transition: 0.4s linear;
+	-webkit-transition: 0.4s linear;
+	-moz-transition: 0.4s linear;
+	-o-transition: 0.4s linear;
+}
+
+.toolbox .toolbox__header
+{
+    width: 100%;
+    height: 20px;
+    border-bottom: 1px solid #c8c8c8;
+    padding-left: 5px;
+    float: left;
+    color: #000;
+}
+
+.toolbox .toolbox__content
+{
+    padding-left: 5px;
+    padding-top: 30px;
+    color: #000;
+}
+
+.toolbox .toolbox__header__closebtn
+{
+    float: right;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.toolbox .toolbox__content__section
+{
+    position: relative;
+    border: 1px solid #c8c8c8;
+    width: 30%;
+    height: auto;
+    display: inline-block;
+    padding: 10px;
+}
+
+.toolbox .toolbox__content__section input
+{
+    max-width: 10px;
+    min-width: 100px;
+    min-height: 25px;
+    max-height: 100%;
+    border-bottom: 1px solid #c8c8c8;
+    width: 100px;
+    height: 25px;
+    transition: 0.3s ease-in-out;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+}
+
+.toolbox .toolbox__content__section input:focus
+{
+    width: 110px;
+    height: 30px;
+}
+
+.toolbox .toolbox__tool__undersection
+{
+    width: 100%;
+    height: auto;
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+}
+
+.toolbox a
+{
+    display: block;
+    padding: 10px;
+    transition: 0.1s ease-out;
+	-webkit-transition: 0.1s ease-out;
+	-moz-transition: 0.1s ease-out;
+	-o-transition: 0.1s ease-out;
+}
+
+.toolbox a:hover
+{
+    color: rgb(95, 21, 138);
+    background: linear-gradient(270deg, #57c5a8, #984db4);
+    background-size: 400% 400%;
+
+    -webkit-animation: ToolboxControlsTab 14s ease infinite;
+    -moz-animation: ToolboxControlsTab 14s ease infinite;
+    animation: ToolboxControlsTab 14s ease infinite;
+}
+
+.xmp
+{
+    display: block;
+    color: rgb(95, 21, 138);
+}
