@@ -1,4 +1,4 @@
-# Form Widget
+# Form Widget + Preview (in DEV)
 Fully customizable widget. Includes preview page.
 
 <b>How to integrate? Read DOC.md</b>
