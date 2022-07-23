@@ -10,5 +10,5 @@
 
 
 1.  Import styles:<br />
-<link rel = "stylesheet" href = "./assets/styles/styles.css">
+<xmp><link rel = "stylesheet" href = "./assets/styles/styles.css"></xmp>
     
